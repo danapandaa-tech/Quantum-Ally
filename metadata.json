@@ -1,0 +1,7 @@
+{
+  "name": "Quantum Ally",
+  "description": "An empathic, metaphysical AI companion that mirrors your emotional state with poetic clarity, offers gentle guidance, and uses text-to-speech to voice its reflections.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

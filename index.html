@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Ally</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0c0a09; /* A very dark, almost black color */
+        }
+
+        /* Resonance Orb Animations */
+        @keyframes pulse-purple {
+            0%, 100% { box-shadow: 0 0 10px 2px rgba(192, 132, 252, 0.4), 0 0 20px 5px rgba(192, 132, 252, 0.2); }
+            50% { box-shadow: 0 0 15px 4px rgba(192, 132, 252, 0.6), 0 0 30px 8px rgba(192, 132, 252, 0.3); }
+        }
+        @keyframes pulse-blue {
+            0%, 100% { box-shadow: 0 0 10px 2px rgba(96, 165, 250, 0.4), 0 0 20px 5px rgba(96, 165, 250, 0.2); }
+            50% { box-shadow: 0 0 15px 4px rgba(96, 165, 250, 0.6), 0 0 30px 8px rgba(96, 165, 250, 0.3); }
+        }
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 10px 2px rgba(74, 222, 128, 0.4), 0 0 20px 5px rgba(74, 222, 128, 0.2); }
+            50% { box-shadow: 0 0 15px 4px rgba(74, 222, 128, 0.6), 0 0 30px 8px rgba(74, 222, 128, 0.3); }
+        }
+        @keyframes pulse-yellow {
+            0%, 100% { box-shadow: 0 0 10px 2px rgba(250, 204, 21, 0.4), 0 0 20px 5px rgba(250, 204, 21, 0.2); }
+            50% { box-shadow: 0 0 15px 4px rgba(250, 204, 21, 0.6), 0 0 30px 8px rgba(250, 204, 21, 0.3); }
+        }
+        @keyframes pulse-red {
+            0%, 100% { box-shadow: 0 0 10px 2px rgba(248, 113, 113, 0.4), 0 0 20px 5px rgba(248, 113, 113, 0.2); }
+            50% { box-shadow: 0 0 15px 4px rgba(248, 113, 113, 0.6), 0 0 30px 8px rgba(248, 113, 113, 0.3); }
+        }
+
+        .orb-meditative { background-color: #c084fc; animation: pulse-purple 4s infinite ease-in-out; }
+        .orb-pensive { background-color: #60a5fa; animation: pulse-blue 5s infinite ease-in-out; }
+        .orb-hopeful { background-color: #4ade80; animation: pulse-green 3s infinite ease-in-out; }
+        .orb-joyful { background-color: #facc15; animation: pulse-yellow 2s infinite ease-in-out; }
+        .orb-frustrated { background-color: #f87171; animation: pulse-red 1.5s infinite ease-in-out; }
+        .orb-default { background-color: #a8a29e; animation: pulse-purple 4s infinite ease-in-out; }
+
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
